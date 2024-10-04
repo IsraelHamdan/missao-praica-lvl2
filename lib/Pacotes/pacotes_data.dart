@@ -20,9 +20,9 @@ List<PacoteViagem> pacotesViagem = [
                 'Conheça as praias mais famosas do Brasil e o Cristo Redentor.',
             fotos: [
               Fotos(
-                foto1: 'assets', // Coloque aqui o endereço da imagem local
-                foto2: '', // Coloque aqui o endereço da imagem local
-                foto3: '', // Coloque aqui o endereço da imagem local
+                foto1: 'assets\rio-de-janeiro1.jpg',
+                foto2: 'assets\rio-de-janeiro2.jpg',
+                foto3: 'assets\rio-de-janeiro3.jpg',
               ),
             ],
           ),
@@ -49,9 +49,9 @@ List<PacoteViagem> pacotesViagem = [
             descricao: 'Um dos destinos mais bonitos do Brasil.',
             fotos: [
               Fotos(
-                foto1: '', // Coloque aqui o endereço da imagem local
-                foto2: '', // Coloque aqui o endereço da imagem local
-                foto3: '', // Coloque aqui o endereço da imagem local
+                foto1: 'assets/Porto-de-Galinhas-1.jpg',
+                foto2: 'assets/Porto-de-Galinhas-2.jpg',
+                foto3: 'assets/Porto-de-Galinhas-3.jpg',
               ),
             ],
           ),
@@ -77,9 +77,9 @@ List<PacoteViagem> pacotesViagem = [
             descricao: 'Famosa por suas paisagens e clima europeu.',
             fotos: [
               Fotos(
-                foto1: '', // Coloque aqui o endereço da imagem local
-                foto2: '', // Coloque aqui o endereço da imagem local
-                foto3: '', // Coloque aqui o endereço da imagem local
+                foto1: 'assets/Gramado-1.jpg',
+                foto2: 'assets/Gramado-2.jpg',
+                foto3: 'assets/Gramado-3.jpg',
               ),
             ],
           ),
@@ -91,9 +91,9 @@ List<PacoteViagem> pacotesViagem = [
             descricao: '.',
             fotos: [
               Fotos(
-                foto1: '', // Coloque aqui o endereço da imagem local
-                foto2: '', // Coloque aqui o endereço da imagem local
-                foto3: '', // Coloque aqui o endereço da imagem local
+                foto1: 'assets/Canela-1.jpg',
+                foto2: 'assets/Canela-2.jpg',
+                foto3: 'assets/Canela-3.jpg',
               ),
             ],
           ),
@@ -120,9 +120,9 @@ List<PacoteViagem> pacotesViagem = [
                 'Famoso por suas paisagens deslumbrantes e cultura local.',
             fotos: [
               Fotos(
-                foto1: '', // Coloque aqui o endereço da imagem local
-                foto2: '', // Coloque aqui o endereço da imagem local
-                foto3: '', // Coloque aqui o endereço da imagem local
+                foto1: 'assets/jalapao-1.jpg',
+                foto2: 'assets/jalapao-2.jpg',
+                foto3: 'assets/jalapao-3.jpg',
               ),
             ],
           ),
@@ -149,9 +149,9 @@ List<PacoteViagem> pacotesViagem = [
                 'A cidade mais famosa da Bahia e suas belezas e delicias',
             fotos: [
               Fotos(
-                foto1: '', // Coloque aqui o endereço da imagem local
-                foto2: '', // Coloque aqui o endereço da imagem local
-                foto3: '', // Coloque aqui o endereço da imagem local
+                foto1: 'assets/Salvador-1.jpg',
+                foto2: 'assets/Salvador-2.jpg',
+                foto3: 'assets/Salvador-3.jpg',
               ),
             ],
           ),
