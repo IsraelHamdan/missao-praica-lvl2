@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:microatividades/Widgets/StackView/StackView.dart';
+import 'home/home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -8,14 +8,18 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        home: Scaffold(
-      appBar: AppBar(
-        title: const Text('Minha lista'),
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
+        scaffoldBackgroundColor:
+            Color(0xFFFEFDED), // Definir a cor de fundo personalizada
       ),
-      body: StackView(),
-    ));
+      home: Home(),
+    );
   }
 }
