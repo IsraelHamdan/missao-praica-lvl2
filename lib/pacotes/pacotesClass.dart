@@ -1,3 +1,5 @@
+import 'package:missaopratica/fotos/fotos.dart';
+
 class PacoteViagem {
   final String id;
   final String nome;
@@ -39,12 +41,4 @@ class Localidade {
     required this.descricao,
     required this.fotos,
   });
-}
-
-class Fotos {
-  final String foto1;
-  final String foto2;
-  final String foto3;
-
-  Fotos({required this.foto1, required this.foto2, required this.foto3});
 }

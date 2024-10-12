@@ -15,7 +15,7 @@ class BannerWidget extends StatelessWidget {
         backgroundColor: const Color(0xFFC6EBC5),
       ),
       body: Center(
-        child: Container(
+        child: SizedBox(
           width: MediaQuery.of(context).size.width * 0.9,
           height: MediaQuery.of(context).size.height * 0.7,
           child: Column(
@@ -54,12 +54,15 @@ class BannerWidget extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            Padding(
-                              padding: const EdgeInsets.all(8.0),
+                            Container(
+                              width: double.infinity,
+                              height: MediaQuery.of(context).size.height * 0.1,
+                              color: const Color(0xFFC6EBC5),
                               child: Text(
                                 pacotesViagem[index].nome,
                                 style: const TextStyle(
-                                  fontSize: 16,
+                                  color: Color.fromARGB(255, 117, 143, 110),
+                                  fontSize: 26,
                                   fontWeight: FontWeight.bold,
                                 ),
                                 textAlign: TextAlign.center,

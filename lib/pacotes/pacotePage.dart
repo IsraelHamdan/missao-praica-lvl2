@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:missaopratica/pacotes/pacotesClass.dart';
-import 'package:missaopratica/pacotes/pacotesData.dart';
 
 class PacotePage extends StatelessWidget {
   final PacoteViagem pacote;
@@ -36,7 +35,7 @@ class PacotePage extends StatelessWidget {
           child: Column(
             children: [
               SizedBox(
-                height: 200,
+                height: 250,
                 child: PageView(
                   children: [
                     for (var foto in fotos)
@@ -49,7 +48,10 @@ class PacotePage extends StatelessWidget {
                 child: Text(
                   pacote.nome,
                   style: const TextStyle(
-                      fontSize: 24, fontWeight: FontWeight.bold),
+                    fontSize: 28,
+                    fontWeight: FontWeight.w800,
+                    color: Color.fromARGB(255, 117, 143, 110),
+                  ),
                   textAlign: TextAlign.center,
                 ),
               ),
@@ -59,17 +61,29 @@ class PacotePage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Row(
+                      mainAxisAlignment: MainAxisAlignment
+                          .center, // Centraliza horizontalmente
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        const Icon(Icons.attach_money, color: Colors.green),
+                        const Icon(
+                          Icons.attach_money,
+                          color: Colors.green,
+                          size: 30,
+                        ),
+                        const SizedBox(width: 8),
                         Text(
                           'R\$ ${pacote.informacoes[0].valor}',
-                          style: const TextStyle(fontSize: 20),
+                          style: const TextStyle(fontSize: 24),
                         ),
                       ],
                     ),
                     Row(
+                      mainAxisAlignment: MainAxisAlignment
+                          .center, // Centraliza horizontalmente
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         const Icon(Icons.star, color: Color(0xFFFA7070)),
+                        const SizedBox(width: 8),
                         Text(
                           '${pacote.informacoes[0].avaliacao}',
                           style: const TextStyle(fontSize: 20),
@@ -125,7 +139,7 @@ class PacotePage extends StatelessWidget {
                           ),
                           Text(
                             pacote.informacoes[0].descricao,
-                            style: const TextStyle(fontSize: 16),
+                            style: const TextStyle(fontSize: 18),
                           ),
                         ],
                       ),

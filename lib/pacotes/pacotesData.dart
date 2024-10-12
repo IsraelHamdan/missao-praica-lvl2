@@ -1,4 +1,5 @@
 import './pacotesClass.dart';
+import 'package:missaopratica/fotos/fotos.dart';
 
 List<PacoteViagem> pacotesViagem = [
   PacoteViagem(

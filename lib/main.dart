@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'home/home.dart';
 
 void main() {
@@ -12,12 +13,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Vamos Viajar',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
-        scaffoldBackgroundColor:
-            Color(0xFFFEFDED), // Definir a cor de fundo personalizada
+        scaffoldBackgroundColor: const Color(0xFFFEFDED),
+        textTheme: GoogleFonts.josefinSansTextTheme(
+          // Aplicar Josefin Sans globalmente
+          Theme.of(context).textTheme,
+        ),
       ),
       home: Home(),
     );
