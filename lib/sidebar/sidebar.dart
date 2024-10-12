@@ -55,7 +55,7 @@ class Sidebar extends StatelessWidget {
               onTap: () {
                 Navigator.pushNamed(context, '/sobre');
               },
-            )
+            ),
           ],
         ),
       ),

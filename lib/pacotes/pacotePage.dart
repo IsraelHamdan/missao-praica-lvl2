@@ -9,7 +9,6 @@ class PacotePage extends StatelessWidget {
     required this.pacote,
   });
 
-  // Método para obter as fotos
   List<String> obterFotos(PacoteViagem pacote) {
     List<String> fotos = [];
     for (var info in pacote.informacoes) {
@@ -82,7 +81,11 @@ class PacotePage extends StatelessWidget {
                           .center, // Centraliza horizontalmente
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        const Icon(Icons.star, color: Color(0xFFFA7070)),
+                        const Icon(
+                          Icons.star,
+                          color: Color(0xFFFA7070),
+                          size: 20,
+                        ),
                         const SizedBox(width: 8),
                         Text(
                           '${pacote.informacoes[0].avaliacao}',

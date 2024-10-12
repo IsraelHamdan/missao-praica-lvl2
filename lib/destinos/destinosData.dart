@@ -17,7 +17,7 @@ List<Destino> destinosData = [
         Fotos(
             foto1: 'assets/Jalapao-1.jpg',
             foto2: 'assets/Jalapao-2.jpg',
-            foto3: 'assets/Jalapao-4.jpg')
+            foto3: 'assets/Jalapao-3.JPG')
       ],
       descricao:
           'Descubra as belezas naturais do Jalapão, onde desertos dourados se encontram com cachoeiras exuberantes e dunas imponentes. Ideal para os amantes de aventura e natureza, oferece trilhas inesquecíveis, lagoas de águas cristalinas e uma rica cultura local. Venha se perder em sua essência!'),
