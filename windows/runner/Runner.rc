@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "missaopratica" "\0"
+            VALUE "FileDescription", "microatividades" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "missaopratica" "\0"
+            VALUE "InternalName", "microatividades" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2024 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "missaopratica.exe" "\0"
-            VALUE "ProductName", "missaopratica" "\0"
+            VALUE "OriginalFilename", "microatividades.exe" "\0"
+            VALUE "ProductName", "microatividades" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END
