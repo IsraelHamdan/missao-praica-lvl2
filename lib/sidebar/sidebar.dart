@@ -1,25 +1,43 @@
 import 'package:flutter/material.dart';
+import 'package:missaopratica/contato/contatoClass.dart';
+import 'package:missaopratica/contato/contatoData.dart';
+import 'package:missaopratica/contato/contatoPage.dart';
 import 'package:missaopratica/destinos/destinoClass.dart';
 import 'package:missaopratica/destinos/destinosCard.dart';
 import 'package:missaopratica/destinos/destinosData.dart';
+import 'package:missaopratica/home/home.dart';
 
 class Sidebar extends StatelessWidget {
   const Sidebar({super.key});
   @override
   Widget build(BuildContext context) {
     List<Destino> destinos = destinosData;
+    List<Contato> contatos = contatosData;
     return Drawer(
       child: Container(
-        color: const Color.fromARGB(255, 254, 237, 241),
+        color: const Color(0xFFFEFDED),
         child: ListView(
           padding: EdgeInsets.zero,
           children: [
             const DrawerHeader(
               decoration: BoxDecoration(color: const Color(0xFFC6EBC5)),
               child: Text(
-                'Menu',
-                style: TextStyle(color: Colors.black, fontSize: 24),
+                'Vamos viajar!',
+                style: TextStyle(color: Colors.black, fontSize: 40),
               ),
+            ),
+            ListTile(
+              title: const Text(
+                'Home',
+                style: TextStyle(
+                    color: Color.fromARGB(255, 117, 143, 110),
+                    fontWeight: FontWeight.bold,
+                    fontSize: 28),
+              ),
+              onTap: () {
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => Home()));
+              },
             ),
             ListTile(
               title: const Text(
@@ -43,7 +61,10 @@ class Sidebar extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                       fontSize: 22)),
               onTap: () {
-                Navigator.pushNamed(context, '/contato');
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => ContatoPage(contatos: contatos)));
               },
             ),
             ListTile(

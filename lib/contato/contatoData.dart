@@ -1,6 +1,6 @@
-import 'package:missaopratica/contato/contatoPage.dart';
+import 'package:missaopratica/contato/contatoClass.dart';
 
-List<Contato> contatos = [
+List<Contato> contatosData = [
   Contato(
       nome: 'Vamos viajar',
       email: 'hamdan_tech@hamdan.com',
