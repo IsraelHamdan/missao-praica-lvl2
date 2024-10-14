@@ -6,6 +6,9 @@ import 'package:missaopratica/destinos/destinoClass.dart';
 import 'package:missaopratica/destinos/destinosCard.dart';
 import 'package:missaopratica/destinos/destinosData.dart';
 import 'package:missaopratica/home/home.dart';
+import 'package:missaopratica/pacotes/pacotesClass.dart';
+import 'package:missaopratica/pacotes/pacotesData.dart';
+import 'package:missaopratica/pacotes/pacotesList.dart';
 
 class Sidebar extends StatelessWidget {
   const Sidebar({super.key});
@@ -13,6 +16,7 @@ class Sidebar extends StatelessWidget {
   Widget build(BuildContext context) {
     List<Destino> destinos = destinosData;
     List<Contato> contatos = contatosData;
+    List<PacoteViagem> pacotes = pacotesViagem;
     return Drawer(
       child: Container(
         color: const Color(0xFFFEFDED),
@@ -74,7 +78,10 @@ class Sidebar extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                       fontSize: 22)),
               onTap: () {
-                Navigator.pushNamed(context, '/sobre');
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => PacotesList(pacotes: pacotes)));
               },
             ),
           ],
