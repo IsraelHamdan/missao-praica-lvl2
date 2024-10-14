@@ -26,7 +26,7 @@ class Sidebar extends StatelessWidget {
             const DrawerHeader(
               decoration: BoxDecoration(color: const Color(0xFFC6EBC5)),
               child: Text(
-                'Vamos viajar!',
+                'Explore o mundo',
                 style: TextStyle(color: Colors.black, fontSize: 40),
               ),
             ),

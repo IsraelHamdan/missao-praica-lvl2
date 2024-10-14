@@ -18,30 +18,22 @@ class SearchPage extends StatefulWidget {
 class _SearchPageState extends State<SearchPage> {
   List<PacoteViagem> suggestions = [];
   List<PacoteViagem> localPacotesViagem = [];
-  String query = "";
+  late String query;
   late String toPrint;
 
   @override
   void initState() {
     super.initState();
     localPacotesViagem = pacotesViagem.cast<PacoteViagem>();
-    print('Dados dos pacotes: $localPacotesViagem');
   }
 
   void updatedSuggestions(String input) {
-    query = input; // Atualiza a query com o novo input
-    print('Query: $query');
-
-    // Adicione este log para verificar o conteúdo de localPacotesViagem
-    print('Dados em localPacotesViagem: $localPacotesViagem');
-
+    query = input;
     setState(() {
       suggestions = localPacotesViagem.where((pacote) {
         return pacote.nome.toLowerCase().contains(query.toLowerCase());
-      }).toList(); // Converte o Iterable em uma lista
+      }).toList();
     });
-
-    print('Sugestões: $suggestions');
   }
 
   @override
@@ -70,22 +62,19 @@ class _SearchPageState extends State<SearchPage> {
                 decoration: InputDecoration(
                   hintText: 'Digite para buscar',
                   filled: true,
-                  fillColor:
-                      const Color(0xFFFEFDED), // Cor de fundo do TextField
+                  fillColor: const Color(0xFFFEFDED),
                   border: OutlineInputBorder(
-                    borderRadius:
-                        BorderRadius.circular(9.0), // Borda arredondada
+                    borderRadius: BorderRadius.circular(9.0),
                     borderSide: const BorderSide(
-                      color: Colors.grey, // Cor da borda padrão
+                      color: Color(0xFFA1C398),
                       width: 1.0,
                     ),
                   ),
                   focusedBorder: OutlineInputBorder(
-                    borderRadius:
-                        BorderRadius.circular(8.0), // Borda arredondada
+                    borderRadius: BorderRadius.circular(8.0),
                     borderSide: const BorderSide(
-                      color: Color(0xFFC6EBC5), // Cor da borda quando focada
-                      width: 2.0, // Largura da borda quando focada
+                      color: Color(0xFFC6EBC5),
+                      width: 2.0,
                     ),
                   ),
                 ),
@@ -97,6 +86,7 @@ class _SearchPageState extends State<SearchPage> {
               itemCount: suggestions.length,
               itemBuilder: (context, index) {
                 return Card(
+                  color: Color(0xFFC6EBC5),
                   margin:
                       const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
                   child: ListTile(
